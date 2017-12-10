@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <title>自由邦 APP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="scripts/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="scripts/slidebars/0.9/slidebars.min.css">
+    <link rel="stylesheet" href="slidebars-theme.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Shims -->
+    <!--[if lt IE 9]>
+            <script src="scripts/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="scripts/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+</head>
+
+<body id="top">
+    <!-- Navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top sb-slide" role="navigation">
+        <!-- Left Control -->
+        <div class="sb-toggle-left navbar-left">
+            <div class="navicon-line"></div>
+            <div class="navicon-line"></div>
+            <div class="navicon-line"></div>
+        </div>
+
+    </nav>
+
+
+    <nav class="navbar navbar-default navbar-fixed-bottom sb-slide" role="navigation">
+        <!-- Left Control -->
+        <div class="sb-toggle-left navbar-left">
+            <div class="navicon-line"></div>
+            <div class="navicon-line"></div>
+            <div class="navicon-line"></div>
+        </div>
+
+    </nav>
+
+    <!-- Site -->
+    <div id="sb-site">
+        <div class="container">
+            <div class="row">
+                <div id="content" class="col-xs-12 col-sm-9">
+                    <!-- About -->
+                    <div id="about">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <h1>
+                                    Slidebars</h1>
+                                <p class="lead">
+                                    Slidebars is a jQuery plugin for quickly and easily implementing app-style revealing, overlay and push menus and sidebars into your website.</p>
+                                <p>
+                                    Slidebars was born from a reoccurring need to create off-canvas sliding mobile menus for responsive design. It's ultra-light at 1469 bytes (js) &amp; 499 bytes (css) when gzipped, uses hardware accelerated transitions where possible for quick and smooth
+                                    animation, falling back to jQuery .animate() on un-supporting browsers.</p>
+                                <p>
+                                    Slidebars aren't just for handheld devices, they can be used for implementing revealing content on sites and screens of all sizes. Try it now: <a class="sb-open-left" href="">
+                                        open a Slidebar</a> and resize your window to see how they behave.</p>
+                                <p>
+                                    You can also add this site to your home screen, try it and see how it can make your web apps feel native.</p>
+                                <p>
+                                    Slidebars also handles orientation changes and resizes flawlessly.</p>
+                            </div>
+                            <!-- /.col-xs-12 -->
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                    <!-- /#about -->
+                    <!-- Download -->
+                    <div id="download">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <h2>
+                                    Download</h2>
+                            </div>
+                            <!-- /.col-xs-12 -->
+                        </div>
+
+                    </div>
+
+
+                    <div id="version-history">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <h2>
+                                    Version History</h2>
+                                <h3>
+                                    0.8.2 <small>Released February 24, 2014</small></h3>
+                                <p>
+                                    Event handling has been re-written in this update for better Android support. Also fixed an error where unnecessary space was added below the site content on a window resize.
+                                </p>
+                                <h3>
+                                    0.8.1 <small>Released February 17, 2014</small></h3>
+                                <p>
+                                    Immediate update which fixes an error which caused Slidebars to fail when only one Slidebar was being used.</p>
+                                <h3>
+                                    0.8 <small>Released February 17, 2014</small></h3>
+                                <p>
+                                    Just over a month after its initial release, Slidebars has had so much positive reception. It has been downloaded nearly 3,000 times, been listed as featured plugin on over 25 sites, starred on Github over 50 times, and forked 17 times. On this site,
+                                    visitors have opened the Slidebars over 90,000 times!</p>
+                                <p>
+                                    If your using Slidebars, and would like to be featured on this site, please let me know. I'm assembling a list of Slidebars out in wild.</p>
+                                <p>
+                                    Version 0.8 has some great new features, and fully retains its compatibility .</p>
+                                <ul>
+                                    <li>Added Slidebars Theme! An optional theme which you are free to use and abuse. It features a top navigation bar, list menus in Slidebars with unlimited level of drop downs, widgets and other useful CSS snippets.</li>
+                                    <li>Mobile and tablet only support. Pass a width to option disableOver </a>
+                                        to disable Slidebars over a certain width screen.</li>
+                                    <li>Show/Hide the Slidebar control classes over the disabled width with option hideControlClasses </li>
+                                    <li>You can now easily set custom widths for your Slidebars . Add modifier class <code>.sb-width-custom</code> to your Slidebar, and pass a pixel or percentage width as a data attribute <code>data-sb-width</code>.
+                                        <li>New modifier class
+                                            <code>.sb-static</code></a>. Add this class to your Slidebar to unfix it and scroll naturally with the site.</li>
+                                        <li>Removed <code>touchend</code> events from links in Slidebars for better scrolling support.
+                                        </li>
+                                        <li>Reworked Control Class events to prevent tap and click events travelling down to elements in Slidebars.</li>
+                                        <li>Added another Slidebar width for screens between 480px and 768px.</li>
+                                        <li>Better Slidebar closing from clicking on the site.</li>
+                                        <li>Cleaned up code.</li>
+                                        <li>Further code comments.</li>
+                                </ul>
+                                <h3>
+                                    0.7.1 <small>Released January 21, 2014</small></h3>
+                                <ul>
+                                    <li>Added Slidebars options .</li>
+                                    <li>Added helper class <code>html.sb-android</code> for Android Browser version 2.*. Can be used to unfix your elements with position fixed.</li>
+                                    <li>Added helper class <code>.sb-disable-close</code> . Apply to a link in a Slidebar to prevent it from closing on click.</li>
+                                    <li>Smoother jQuery .animate() animations on window resize events.</li>
+                                    <li>Cleaned up code.</li>
+                                </ul>
+                                <h3>
+                                    0.7 <small>Released January 13, 2014</small></h3>
+                                <ul>
+                                    <li>First public release.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Future Development -->
+                    <div id="development">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <h2>
+                                    Future Development</h2>
+                                <p>
+                                    Below is a list of future development plans for the plugin. There are currently no expected dates. If you'd like to notified of when this plugin is updated, you can sign up to my mailing list .</p>
+                                <ul>
+                                    <li>Ajax Loading</li>
+                                    <li>WordPress Plugin</li>
+                                    <li>Top &amp; bottom Slidebars</li>
+                                    <li>Swipe and drag control</li>
+                                    <li>Further API development</li>
+                                    <li>Clean up and further optimise code</li>
+                                </ul>
+                            </div>
+                            <!-- /.col-xs-12 -->
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                    <!-- /#development -->
+                </div>
+
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /#sb-site -->
+    <!-- Slidebars -->
+    <!-- /.sb-left -->
+    <div class="sb-slidebar sb-left">
+        <nav>
+            <ul class="sb-menu">
+                <li><a href="#">LOGO</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Download</a></li>
+                <li><a href="#">Usage</a></li>
+                <li><a href="#">API</a></li>
+                <li><a href="#">Compatibility</a></li>
+                <li><a href="#" class="sb-toggle-submenu">Help &amp; Issues <span class="sb-caret"></span></a>
+                    <ul class="sb-submenu">
+                        <li><a href="#">Overview</a></li>
+                        <li><a href="#">Fixed Positions</a></li>
+                        <li><a href="#">Modal.js</a></li>
+                        <li><a href="#">Squashed Navbar Content</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact</a></li>
+                <li><a class="github" href="#">Github</a></li>
+                <li><span class="sb-open-right">About the Author</span></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- /.sb-left -->
+
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/bootstrap/js/bootstrap.min.js"></script>
+    <script src="scripts/slidebars/0.9/slidebars.min.js"></script>
+    <script>
+        (function($) {
+            $(document).ready(function() {
+                $.slidebars();
+            });
+        })(jQuery);
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <script>
+        (function(doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function() {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    if (clientWidth >= 750) {
+                        docEl.style.fontSize = '100px';
+                    } else {
+                        docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+                    }
+                };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+    </script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="./css/swiper.min.css">
+
+    <!-- Demo styles -->
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+        
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .swiper-container {
+            width: 100%;
+            background: #fff;
+            overflow: hidden;
+            padding: 0 0.1rem;
+            box-sizing: border-box;
+        }
+        
+        .swiper-slide {
+            width: 100%;
+            padding: 0.15rem 0.1rem;
+            box-sizing: border-box;
+            background: #fff;
+            float: left;
+            overflow: hidden;
+            margin-left: -0.03rem; 
+        }
+        
+        .swiper-slide img {
+            width: 100%;
+            display: block;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/w700_h0--001.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/w700_h0--002.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/w700_h0--003.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/w700_h0--004.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/w700_h0--005.jpg" alt=""></div>
+        </div>
+        <!-- Add Pagination -->
+        <!-- <div class="swiper-pagination"></div> -->
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="./js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 2.5,
+            // spaceBetween: 10,
+            freeMode: true,
+            pagination: {
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+
+</html>

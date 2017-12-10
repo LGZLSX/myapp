@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>旅游APP - 首页</title>
+    <script>
+        (function(doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function() {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    if (clientWidth >= 750) {
+                        docEl.style.fontSize = '100px';
+                    } else {
+                        docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+                    }
+                };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+    </script>
+    <link rel="stylesheet" href="./font_418401_nfu6zvmq7plul3di/iconfont.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="scripts/slidebars/0.9/slidebars.min.css">
+    <link rel="stylesheet" href="./css/other.css">
+
+</head>
+
+<body id="top">
+
+    <div class="box-header sb-slide">
+        <a href="#menu" class="js-slideout-toggle sb-toggle-left a-left">
+            <i class="iconfont">&#xe623;</i>
+        </a>
+        <div class="header-search">
+            <i class="iconfont">&#xe617;</i>
+            <input style="color: #333" name="kword" type="text" placeholder="搜索目的地/关键字 " />
+        </div>
+        <a class="a-right">
+            <i class="iconfont">&#xe60f;</i>
+        </a>
+    </div>
+
+
+    <div class="box-footer sb-slide">
+        <a href="./index.html">
+            <i class="iconfont" style="color: #45bbbb">&#xe68c;</i>
+            <p style="color: #45bbbb">首页</p>
+        </a>
+        <a href="">
+            <i class="iconfont">&#xe6a2;</i>
+            <p>驴友圈</p>
+        </a>
+        <a href="./live.html">
+            <i class="iconfont">&#xe824;</i>
+            <p>直播</p>
+        </a>
+        <a href="">
+            <i class="iconfont">&#xe66a;</i>
+            <p>商城</p>
+        </a>
+        <a href="">
+            <i class="iconfont">&#xe610;</i>
+            <p>我的</p>
+        </a>
+    </div>
+
+    <!-- Site -->
+    <div id="sb-site">
+        <div class="banner swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="http://www.hao123.com">
+                        <img class="swiper-lazy" src="./images/lunbotu_01.jpg">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="http://www.baidu.com">
+                        <img class="swiper-lazy" src="./images/lunbotu_02.jpg">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="http://www.runoob.com/">
+                        <img class="swiper-lazy" src="./images/lunbotu_03.jpg">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="http://97ui.com/">
+                        <img class="swiper-lazy" src="./images/lunbotu_04.jpg">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="http://www.runoob.com/">
+                        <img class="swiper-lazy" src="./images/lunbotu_05.jpg">
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-pagination">
+            </div>
+        </div>
+
+        <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+        <script src="js/swiper.jquery.min.js"></script>
+        <script type="text/javascript">
+            var banner = new Swiper('.swiper-container', {
+                autoplay: 5000,
+                pagination: '.swiper-pagination',
+                paginationClickable: true,
+                lazyLoading: true,
+                loop: true,
+                autoplayDisableOnInteraction: false,
+            });
+        </script>
+
+        <!-- Swiper -->
+        <div class="swiper-container swiper-contant">
+            <div class="swiper-wrapper">
+                <a href="" class="swiper-slide nav-slide">
+                    <span class="nav-img1">热门景点</span>
+                </a>
+                <a href="" class="swiper-slide nav-slide">
+                    <span class="nav-img2">明星路线</span>
+                </a>
+                <a href="" class="swiper-slide nav-slide">
+                    <span class="nav-img3">假日优惠</span>
+                </a>
+                <a href="" class="swiper-slide nav-slide">
+                    <span class="nav-img4">团购秒杀</span>
+                </a>
+                <a href="" class="swiper-slide nav-slide">
+                    <span class="nav-img5">私人订制</span>
+                </a>
+                <a href="" class="swiper-slide nav-slide">
+                    <span class="nav-img6">旅游保险</span>
+                </a>
+            </div>
+            <!-- Add Pagination -->
+            <!-- <div class="swiper-pagination"></div> -->
+        </div>
+
+        <!-- Swiper JS -->
+        <script src="./js/swiper.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper('.swiper-contant', {
+                slidesPerView: 3.5,
+                // spaceBetween: 10,
+                freeMode: true,
+                pagination: {
+                    clickable: true,
+                },
+            });
+        </script>
+
+
+        <!-- ================  content  ===================-->
+
+        <div class="content-icon">
+            <div class="icon-box">
+                <a href="" target="_blank">
+                    <i class="iconfont icon-big1">&#xe632;</i>
+                    <p>签证办理</p>
+                </a>
+                <a href="" target="_blank">
+                    <i class="iconfont icon-big2">&#xe628;</i>
+                    <p>周边游</p>
+                </a>
+                <a href="" target="_blank">
+                    <i class="iconfont icon-big2">&#xe626;</i>
+                    <p>特价游</p>
+                </a>
+                <a href="" target="_blank">
+                    <i class="iconfont icon-big3">&#xe62b;</i>
+                    <p>自由行</p>
+                </a>
+                <a href="" target="_blank">
+                    <i class="iconfont">&#xe638;</i>
+                    <p>附近娱乐</p>
+                </a>
+                <a href="" target="_blank">
+                    <i class="iconfont">&#xe61f;</i>
+                    <p>附近酒店</p>
+                </a>
+                <a href="" target="_blank">
+                    <i class="iconfont icon-big2">&#xe625;</i>
+                    <p>飞机票</p>
+                </a>
+                <a href="" target="_blank">
+                    <i class="iconfont">&#xe624;</i>
+                    <p>火车票</p>
+                </a>
+                <a href="" target="_blank">
+                    <i class="iconfont  icon-big3">&#xe65b;</i>
+                    <p>旅游攻略</p>
+                </a>
+                <a href="" target="_blank">
+                    <i class="iconfont">&#xe73e;</i>
+                    <p>更多服务</p>
+                </a>
+            </div>
+        </div>
+
+        <!-- ======================================================== -->
+
+        <div class="title">
+            <h3><span></span>热门目的地
+                <i class="iconfont">&#xe612;</i>
+                <a href="" class="title-more">更多</a>
+            </h3>
+        </div>
+        <div class="content-adr">
+            <a href="">
+                <img src="images/B--001.png" alt="">
+                <span>丽江</span>
+                <p>艳遇在酒吧街</p>
+            </a>
+            <a href="">
+                <img src="images/B--002.png" alt="">
+                <span>乐山</span>
+                <p>钟灵毓秀</p>
+            </a>
+            <a href="">
+                <img src="images/B--003.png" alt="">
+                <span>沈阳</span>
+                <p>两代帝王都</p>
+            </a>
+            <a href="">
+                <img src="images/B--004.png" alt="">
+                <span>国外游</span>
+                <p>艳遇在酒吧街</p>
+            </a>
+            <a href="">
+                <img src="images/B--005.png" alt="">
+                <span>假日惠</span>
+                <p>钟灵毓秀</p>
+            </a>
+            <a href="">
+                <img src="images/B--006.png" alt="">
+                <span>浪漫游</span>
+                <p>两代帝王都</p>
+            </a>
+        </div>
+        <!-- ================================================== -->
+
+
+        <div class="title">
+            <h3><span></span>精选酒店
+                <i class="iconfont">&#xe612;</i>
+                <a href="" class="title-more">更多</a>
+            </h3>
+        </div>
+        <div class="content-jd">
+            <a href="" class="line">
+                <img src="images/B--004.png" alt="">
+                <h3>武汉友谊国际酒店</h3>
+                <div class="jd-pl"><span>性价比高</span><span>设施很赞</span><dt>4.9分</dt></div>
+                <p>1193条评论 98%满意</p>
+                <div class="jd-price">￥<span>269 </span></div>
+                <div class="jd-order">立即预订</div>
+            </a>
+            <a href="" class="line">
+                <img src="images/B--002.png" alt="">
+                <h3>武汉友谊国际酒店</h3>
+                <div class="jd-pl"><span>性价比高</span><span>设施很赞</span><dt>4.9分</dt></div>
+                <p>1193条评论 98%满意</p>
+                <div class="jd-price">￥<span>269 </span></div>
+                <div class="jd-order">立即预订</div>
+            </a>
+            <a href="" class="line">
+                <img src="images/B--003.png" alt="">
+                <h3>武汉友谊国际酒店</h3>
+                <div class="jd-pl"><span>性价比高</span><span>设施很赞</span><dt>4.9分</dt></div>
+                <p>1193条评论 98%满意</p>
+                <div class="jd-price">￥<span>269 </span></div>
+                <div class="jd-order">立即预订</div>
+            </a>
+            <a href="">
+                <img src="images/B--006.png" alt="">
+                <h3>武汉友谊国际酒店</h3>
+                <div class="jd-pl"><span>性价比高</span><span>设施很赞</span><dt>4.9分</dt></div>
+                <p>1193条评论 98%满意</p>
+                <div class="jd-price">￥<span>269 </span></div>
+                <div class="jd-order">立即预订</div>
+            </a>
+        </div>
+
+
+        <!-- ================================================== -->
+
+        <div class="title">
+            <h3><span></span>特价优惠
+                <i class="iconfont">&#xe612;</i>
+                <a href="" class="title-more">更多</a>
+            </h3>
+        </div>
+        <div class="content-yh">
+            <a href="">
+                <img src="images/lunbotu_06.jpg" alt="">
+                <h3>游木兰天池住度假酒店享受自然美景</h3>
+                <p><span>性价比高</span>1193条评论&nbsp;&nbsp;98%满意</p>
+                <div class="yh-price">
+                    <dt>￥</dt><span>199 </span>已省100元
+                    <div class="yh-right">立即抢购</div>
+                </div>
+            </a>
+
+            <a href="">
+                <img src="images/lunbotu_08.jpg" alt="">
+                <h3>双人畅游恩施土司城入住女儿城艺术酒店</h3>
+                <p><span>性价比高</span>1193条评论&nbsp;&nbsp;98%满意</p>
+                <div class="yh-price">
+                    <dt>￥</dt><span>269 </span>已省199元
+                    <div class="yh-right">立即抢购</div>
+                </div>
+            </a>
+            <a href="">
+                <img src="images/lunbotu_06.jpg" alt="">
+                <h3>游木兰天池住度假酒店享受自然美景</h3>
+                <p><span>性价比高</span>1193条评论&nbsp;&nbsp;98%满意</p>
+                <div class="yh-price">
+                    <dt>￥</dt><span>199 </span>已省100元
+                    <div class="yh-right">立即抢购</div>
+                </div>
+            </a>
+
+            <a href="">
+                <img src="images/lunbotu_08.jpg" alt="">
+                <h3>双人畅游恩施土司城入住女儿城艺术酒店</h3>
+                <p><span>性价比高</span>1193条评论&nbsp;&nbsp;98%满意</p>
+                <div class="yh-price">
+                    <dt>￥</dt><span>269 </span>已省199元
+                    <div class="yh-right">立即抢购</div>
+                </div>
+            </a>
+            <a href="">
+                <img src="images/lunbotu_06.jpg" alt="">
+                <h3>游木兰天池住度假酒店享受自然美景</h3>
+                <p><span>性价比高</span>1193条评论&nbsp;&nbsp;98%满意</p>
+                <div class="yh-price">
+                    <dt>￥</dt><span>199 </span>已省100元
+                    <div class="yh-right">立即抢购</div>
+                </div>
+            </a>
+
+            <a href="">
+                <img src="images/lunbotu_08.jpg" alt="">
+                <h3>双人畅游恩施土司城入住女儿城艺术酒店</h3>
+                <p><span>性价比高</span>1193条评论&nbsp;&nbsp;98%满意</p>
+                <div class="yh-price">
+                    <dt>￥</dt><span>269 </span>已省199元
+                    <div class="yh-right">立即抢购</div>
+                </div>
+            </a>
+        </div>
+
+        <!-- ============================================== -->
+
+
+
+
+
+    </div>
+    <!-- /#sb-site -->
+
+
+    <!-- Slidebars .sb-left -->
+    <div class="sb-slidebar sb-left">
+        <nav class="menu-list">
+            <div class="pic">
+                <a href=""><img src="./images/icon.jpg" alt=""></a>
+                <span>182******34</span>
+            </div>
+            <ul>
+                <h4 class="list-b">旅游分类</h4>
+                <li><a href="#" class="list-s">跟团游<i class="iconfont">&#xe612;</i></a></li>
+                <li><a href="#" class="list-s">自驾游<i class="iconfont">&#xe612;</i></a></li>
+                <li><a href="#" class="list-s">自助游<i class="iconfont">&#xe612;</i></a></li>
+                <li><a href="#" class="list-s">定制游<i class="iconfont">&#xe612;</i></a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- /.sb-left -->
+
+    <script src="scripts/jquery.min.js"></script>
+    <!-- <script src="scripts/bootstrap/js/bootstrap.min.js"></script> -->
+    <script src="scripts/slidebars/0.9/slidebars.min.js"></script>
+    <script>
+        (function($) {
+            $(document).ready(function() {
+                $.slidebars();
+            });
+        })(jQuery);
+    </script>
+
+</body>
+
+</html>
